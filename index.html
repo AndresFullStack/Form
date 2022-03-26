@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+    </header>
+    <main>
+        <section class="section_form">
+            <article class="form_container">
+                <br>
+                <form>
+                    <p>FORMULARIO FILTRO</p>
+                    <fieldset>
+                        <p>
+                            <label for="">Name</label>
+                            <input type="text" name="name_characters" id="">
+                        </p>
+                        <p>
+                            <label for="status">Choose a status:</label>
+                            <select id="status" name="status_characters" size="1">
+                                <option value="alive">alive</option>
+                                <option value="dead">dead</option>
+                                <option value="unknown">unknown</option>
+                            </select><br><br>
+                        </p>
+                        <p>
+                            <label for="">Species</label>
+                            <input type="text" name="species_characters" id="">
+                        </p>
+                        <button type="button" onclick="filtro()" class="button_filter">Filtrar</button>
+                    </fieldset>
+                </form>
+            </article>
+        </section>
+        <br>
+        <br>
+        <table class="table_container" id="table_container">
+            <caption class="">RICK AND MORTY API</caption>
+            <thead>
+                <tr>
+                    <th colspan="1">IMAGE</th>
+                    <th>NAME</th>
+                    <th>STATUS</th>
+                    <th>SPECIES</th>
+                </tr>
+            </thead>
+            <!-- <tfoot>
+                <tr>
+                    <th colspan="2"></th>
+                    <th></th>
+                </tr>
+            </tfoot> -->
+            <tbody class="tbody">
+            </tbody>
+        </table>
+    </main>
+    <footer></footer>
+    <script src="./index.js">
+        consultaAPI()
+    </script>
+</body>
+
+</html>
